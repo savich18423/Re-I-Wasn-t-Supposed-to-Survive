@@ -90,6 +90,8 @@
       margin: 0.5rem;
       cursor: pointer;
       transition: all 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
     }
 
     .btn:hover {
@@ -120,13 +122,46 @@
     @keyframes blink-caret {
       50% { border-color: transparent; }
     }
+
+    .support-block {
+      margin-top: 4rem;
+      text-align: center;
+    }
+
+    .support-block h3 {
+      margin-bottom: 1rem;
+      color: #ff4e4e;
+    }
+
+    .support-block p {
+      margin-bottom: 1rem;
+    }
+
+    .support-link {
+      color: #ff4e4e;
+      text-decoration: none;
+      display: block;
+      margin: 0.5rem 0;
+      transition: 0.2s;
+    }
+
+    .support-link:hover {
+      text-shadow: 0 0 5px #ff4e4e;
+    }
+
+    .card {
+      background: #111;
+      padding: 1rem;
+      margin-top: 1rem;
+      border: 1px solid #333;
+    }
   </style>
 </head>
 <body>
   <div class="container fade-in">
     <div class="logo">RVS</div>
     <div class="title typewriter">Re: I Wasn't Supposed to Survive</div>
-    <p class="subtitle">Episodic psychological horror based on real Reddit stories.</p>
+    <p class="subtitle">Episodic psychological horror inspired by real Reddit stories.</p>
 
     <div class="episode">
       <h2>Episode One: “Something Was Off” (15–20 min)</h2>
@@ -134,12 +169,32 @@
     </div>
 
     <div class="button-group">
-      <button class="btn">Download Demo</button>
-      <button class="btn">Wishlist on Steam</button>
+      <a href="#" class="btn">Download Demo</a>
+      <a href="https://savich18.itch.io/" target="_blank" class="btn">Our itch.io</a>
+    </div>
+
+    <div class="support-block">
+      <h3>💸 Support the Project</h3>
+
+      <a class="support-link" href="https://funpay.com/lots/offer?id=47208778" target="_blank">
+        🌍 FunPay (any card worldwide, even crypto)
+      </a>
+
+      <div class="card">
+        🇷🇺 Russian Card (Tinkoff): <strong>2200 7013 0915 2079</strong>
+      </div>
+
+      <a class="support-link" href="https://www.donationalerts.com/r/official_savich18" target="_blank">
+        🧾 Donation Alerts
+      </a>
+
+      <a class="support-link" href="https://savich18.itch.io/" target="_blank">
+        🎮 itch.io Profile
+      </a>
     </div>
 
     <div class="footer">
-      Want your Reddit story featured?<br/>
+      Want your story featured in an episode?<br/>
       Send it to: <strong>savich618@gmail.com</strong>
     </div>
   </div>
