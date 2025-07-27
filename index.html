@@ -3,200 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RVS — Re: I Wasn't Supposed to Survive</title>
+  <title>Savich18‑Company</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html, body {
-      background: #000;
-      color: #c9c9c9;
-      font-family: 'Share Tech Mono', monospace;
-      overflow-x: hidden;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: repeating-linear-gradient(0deg, rgba(255,255,255,0.01) 0px, rgba(255,255,255,0.01) 1px, transparent 2px, transparent 4px);
-      animation: noise 0.2s infinite;
-      pointer-events: none;
-      z-index: 1;
-    }
-
-    @keyframes noise {
-      0% { transform: translate(0,0); }
-      20% { transform: translate(-2px,1px); }
-      40% { transform: translate(3px,-1px); }
-      60% { transform: translate(-1px,2px); }
-      80% { transform: translate(1px,-2px); }
-      100% { transform: translate(0,0); }
-    }
-
-    .container {
-      position: relative;
-      z-index: 2;
-      max-width: 800px;
-      margin: 10vh auto;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .logo {
-      font-size: 3rem;
-      color: #ff4e4e;
-      letter-spacing: 10px;
-      margin-bottom: 1rem;
-    }
-
-    .title {
-      font-size: 1.5rem;
-      margin-bottom: 2rem;
-    }
-
-    .episode {
-      margin: 2rem 0;
-    }
-
-    .fade-in {
-      opacity: 0;
-      animation: fadeIn 2s forwards;
-    }
-
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
-
-    .button-group {
-      margin-top: 2rem;
-    }
-
-    .btn {
-      background-color: #111;
-      color: #eee;
-      padding: 0.8rem 2rem;
-      border: 1px solid #555;
-      margin: 0.5rem;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    .btn:hover {
-      background-color: #ff4e4e;
-      color: #000;
-      transform: scale(1.05);
-    }
-
-    .footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-
-    .typewriter {
-      display: inline-block;
-      overflow: hidden;
-      border-right: 0.15em solid orange;
-      white-space: nowrap;
-      animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
-    }
-
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
-
-    @keyframes blink-caret {
-      50% { border-color: transparent; }
-    }
-
-    .support-block {
-      margin-top: 4rem;
-      text-align: center;
-    }
-
-    .support-block h3 {
-      margin-bottom: 1rem;
-      color: #ff4e4e;
-    }
-
-    .support-block p {
-      margin-bottom: 1rem;
-    }
-
-    .support-link {
-      color: #ff4e4e;
-      text-decoration: none;
-      display: block;
-      margin: 0.5rem 0;
-      transition: 0.2s;
-    }
-
-    .support-link:hover {
-      text-shadow: 0 0 5px #ff4e4e;
-    }
-
-    .card {
-      background: #111;
-      padding: 1rem;
-      margin-top: 1rem;
-      border: 1px solid #333;
-    }
+    body { margin:0; padding:0; background:#000; color:#ccc; font-family:sans-serif; }
+    nav { background:#111; padding:10px; text-align:center; }
+    nav a { color:#eee; margin:0 15px; text-decoration:none; font-size:1.1rem; }
+    nav a:hover { color:#ff4e4e; }
+    .container { max-width:800px; margin:40px auto; padding:20px; }
+    h1 { font-size:2.5rem; color:#ff4e4e; text-align:center; }
+    section { margin-bottom:40px; }
+    ul { list-style:none; padding:0; }
+    ul li { margin:10px 0; }
+    a.button { display:inline-block; background:#222; color:#eee; padding:10px 20px; margin:5px; text-decoration:none; border:1px solid #444; }
+    a.button:hover { background:#ff4e4e; color:#000; }
   </style>
 </head>
 <body>
-  <div class="container fade-in">
-    <div class="logo">RVS</div>
-    <div class="title typewriter">Re: I Wasn't Supposed to Survive</div>
-    <p class="subtitle">Episodic psychological horror inspired by real Reddit stories.</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="game.html">Re‑I‑Wasn't‑Supposed‑to‑Survive</a>
+  </nav>
 
-    <div class="episode">
-      <h2>Episode One: “Something Was Off” (15–20 min)</h2>
-      <p>Lynn, 21, just wanted a fresh start — a quiet job, a cheap trailer, and a normal night. But something about the silence that evening wasn’t normal... and some routines should never be followed.</p>
-    </div>
+  <div class="container">
+    <h1>Savich18‑Company</h1>
+    <p>We build atmospheric, story‑driven indie games inspired by real stories and online culture. Experimental, emotional, bold.</p>
 
-    <div class="button-group">
-      <a href="#" class="btn">Download Demo</a>
-      <a href="https://savich18.itch.io/" target="_blank" class="btn">Our itch.io</a>
-    </div>
+    <section>
+      <h2>Featured Game</h2>
+      <p><strong>Re: I Wasn't Supposed to Survive</strong><br>
+      Episodic psychological horror based on real Reddit posts.</p>
+      <a href="game.html" class="button">View Game Page</a>
+    </section>
 
-    <div class="support-block">
-      <h3>💸 Support the Project</h3>
+    <section>
+      <h2>Upcoming Projects</h2>
+      <ul>
+        <li>[WIP] Analog horror experiment</li>
+        <li>[WIP] Interactive Reddit short stories</li>
+        <li>[WIP] Surreal OS-based mystery sim</li>
+      </ul>
+    </section>
 
-      <a class="support-link" href="https://funpay.com/lots/offer?id=47208778" target="_blank">
-        🌍 FunPay (any card worldwide, even crypto)
-      </a>
-
-      <div class="card">
-        🇷🇺 Russian Card (Tinkoff): <strong>2200 7013 0915 2079</strong>
-      </div>
-
-      <a class="support-link" href="https://www.donationalerts.com/r/official_savich18" target="_blank">
-        🧾 Donation Alerts
-      </a>
-
-      <a class="support-link" href="https://savich18.itch.io/" target="_blank">
-        🎮 itch.io Profile
-      </a>
-    </div>
-
-    <div class="footer">
-      Want your story featured in an episode?<br/>
-      Send it to: <strong>savich618@gmail.com</strong>
-    </div>
+    <section>
+      <h2>Support Us</h2>
+      <ul>
+        <li><a href="https://funpay.com/lots/offer?id=47208778" target="_blank">FunPay (card/crypto)</a></li>
+        <li>Tinkoff Card (RU): <strong>2200 7013 0915 2079</strong></li>
+        <li><a href="https://www.donationalerts.com/r/official_savich18" target="_blank">DonationAlerts</a></li>
+      </ul>
+    </section>
   </div>
 </body>
 </html>
