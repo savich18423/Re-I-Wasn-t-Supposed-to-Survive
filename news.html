@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SAVICH18 — News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      background: #0c0c0c;
+      color: #ccc;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      color: #4dbfff;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .news-card {
+      background: #161616;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .news-card h2 {
+      margin-top: 0;
+      color: #ffffff;
+    }
+
+    .short-desc {
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    .full-text {
+      display: none;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #bbb;
+    }
+
+    .read-more {
+      background: none;
+      border: none;
+      color: #4dbfff;
+      cursor: pointer;
+      font-size: 14px;
+      padding: 0;
+      margin-top: 5px;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    .back-button {
+      display: block;
+      margin: 40px auto 0;
+      width: fit-content;
+      padding: 10px 16px;
+      background: #111;
+      border: 1px solid #333;
+      color: #4dbfff;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .back-button:hover {
+      background: #4dbfff;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📰 Development News</h1>
+
+    <!-- 🔥 NEWS ITEM 1 -->
+    <div class="news-card">
+      <h2>🎮 Psychological Horror — 75% Complete!</h2>
+      <p class="short-desc">Our first episodic horror game is nearing release.</p>
+      <div class="full-text">
+        <p>
+          Our debut psychological horror title is now <strong>75% complete</strong>. As the lead developer, I can confidently say this is something special. This is the first episode of a planned trilogy and will be completely free — a short, unsettling experience based on raw Reddit stories.<br><br>
+          Future episodes are planned for Steam with expanded scope, localization (ENG + RUS), and deeper mechanics.<br>
+          We expect to release the game in the <strong>second half of June</strong>. Stay tuned!
+        </p>
+      </div>
+      <button class="read-more">Read More</button>
+    </div>
+
+    <!-- 🚰 NEWS ITEM 2 -->
+    <div class="news-card">
+      <h2>💧 Announcing: WaterWorks Simulator</h2>
+      <p class="short-desc">Build a water bottling empire from your garage!</p>
+      <div class="full-text">
+        <p>
+          We're excited to unveil our next game — <strong>WaterWorks: Bottle & Deliver Simulator</strong>.<br><br>
+          Start from scratch in a tiny garage. Order empty bottles, manually fill them with water, seal and pack them, and ship to clients. Expand your space, automate the work, and grow into a full bottling factory.<br><br>
+          The game will be released on Steam in 2025, priced around <strong>$6.88</strong>. Follow for updates!
+        </p>
+      </div>
+      <button class="read-more">Read More</button>
+    </div>
+
+    <a href="index.html" class="back-button">← Back to Main Site</a>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.read-more');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const text = button.previousElementSibling;
+        const isOpen = text.style.display === 'block';
+        text.style.display = isOpen ? 'none' : 'block';
+        button.textContent = isOpen ? 'Read More' : 'Read Less';
+      });
+    });
+  </script>
+</body>
+</html>
