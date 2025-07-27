@@ -3,50 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Savich18-Company</title>
+  <title>SAVICH18-COMPANY</title>
   <style>
     body {
       margin: 0;
       background: #0b0b0b;
       color: #ccc;
       font-family: 'Segoe UI', sans-serif;
-      line-height: 1.7;
+      line-height: 1.6;
     }
 
     header {
       background: #111;
-      padding: 20px 0;
+      padding: 40px 0 20px 0;
       text-align: center;
       border-bottom: 1px solid #222;
     }
 
     header h1 {
-      color: #ff3c3c;
+      color: #4dbfff;
       margin: 0;
-      font-size: 2.5rem;
-      letter-spacing: 2px;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
     }
 
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      color: #aaa;
-      margin: 0 15px;
-      text-decoration: none;
-      font-size: 1rem;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #ff3c3c;
+    header p {
+      color: #888;
+      font-style: italic;
+      font-size: 0.95rem;
     }
 
     .container {
       max-width: 900px;
-      margin: 50px auto;
-      padding: 0 20px;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
 
     section {
@@ -55,49 +45,84 @@
 
     h2 {
       color: #eee;
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       margin-bottom: 15px;
-      border-left: 3px solid #ff3c3c;
+      border-left: 3px solid #4dbfff;
       padding-left: 10px;
+    }
+
+    p, li {
+      font-size: 15px;
+    }
+
+    .game-block {
+      background: #141414;
+      padding: 20px;
+      border: 1px solid #222;
+      margin-bottom: 30px;
+      border-radius: 6px;
+    }
+
+    .game-block h3 {
+      margin-top: 0;
+      color: #4dbfff;
+    }
+
+    .game-block p {
+      margin: 8px 0 14px;
+      color: #ccc;
     }
 
     .button {
       display: inline-block;
       background: #1a1a1a;
-      color: #ff3c3c;
-      padding: 10px 20px;
+      color: #4dbfff;
+      padding: 8px 16px;
       text-decoration: none;
       border: 1px solid #333;
-      margin-top: 10px;
       transition: 0.3s;
+      font-size: 14px;
     }
 
     .button:hover {
-      background: #ff3c3c;
+      background: #4dbfff;
       color: #000;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    ul li {
-      margin: 8px 0;
     }
 
     footer {
       text-align: center;
       font-size: 0.9rem;
       color: #555;
-      margin-top: 60px;
-      padding-bottom: 20px;
+      margin: 60px 0 20px;
     }
 
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 8px 0;
-      }
+    .support-block {
+      background: #121212;
+      padding: 20px;
+      border: 1px dashed #333;
+      border-radius: 5px;
+      margin-top: 40px;
+    }
+
+    .support-block h3 {
+      color: #fff;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .support-block p {
+      color: #aaa;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .support-block a {
+      color: #4dbfff;
+      text-decoration: none;
+    }
+
+    .support-block a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -105,53 +130,41 @@
 
   <header>
     <h1>SAVICH18-COMPANY</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="game.html">Re: I Wasn't Supposed to Survive</a>
-    </nav>
+    <p>Indie devs crafting weird stories, broken systems and immersive minimalism.</p>
   </header>
 
   <div class="container">
 
     <section>
-      <h2>About Us</h2>
+      <h2>🎮 Our Games</h2>
+
+      <div class="game-block">
+        <h3>ReIWASNTSupposedToSurvive</h3>
+        <p>Episodic psychological horror inspired by real Reddit stories. Minimalist, raw, and deeply unsettling.</p>
+        <a href="reiwasntsupposedtosurvive.html" class="button">→ View Game Page</a>
+      </div>
+
+      <div class="game-block">
+        <h3>WaterWorks: Bottle & Deliver Simulator</h3>
+        <p>Start your water bottling business by hand, grow into automation, and become the king of hydration economy.</p>
+        <a href="waterworks.html" class="button">→ View Game Page</a>
+      </div>
+    </section>
+
+    <section class="support-block">
+      <h3>💸 Support Us</h3>
       <p>
-        We’re an independent game studio crafting experimental, story-driven titles with atmosphere, emotion, and glitchy vibes.
-        Our work blends realism, surrealism, and interactive fiction — built in Unity, shaped by true stories.
+        • <a href="https://funpay.com/lots/offer?id=47208778" target="_blank">FunPay (any card / crypto)</a><br>
+        • Tinkoff Card (RU): <b>2200 7013 0915 2079</b><br>
+        • <a href="https://www.donationalerts.com/r/official_savich18" target="_blank">DonationAlerts</a><br>
+        • <a href="https://savich18.itch.io/" target="_blank">Itch.io Profile</a>
       </p>
-    </section>
-
-    <section>
-      <h2>🎮 Our Game</h2>
-      <p>
-        <strong>Re: I Wasn't Supposed to Survive</strong> — an episodic psychological horror inspired by real Reddit stories.
-      </p>
-      <a href="game.html" class="button">→ View Game Page</a>
-    </section>
-
-    <section>
-      <h2>🧪 What's Next</h2>
-      <ul>
-        <li>[WIP] Analog horror experiments</li>
-        <li>[WIP] Interactive Reddit stories</li>
-        <li>[WIP] Surreal OS mystery simulator</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>❤️ Support Us</h2>
-      <ul>
-        <li><a href="https://funpay.com/lots/offer?id=47208778" target="_blank">💳 FunPay (Card or Crypto)</a></li>
-        <li>🇷🇺 Tinkoff: <strong>2200 7013 0915 2079</strong></li>
-        <li><a href="https://www.donationalerts.com/r/official_savich18" target="_blank">💸 DonationAlerts (RU/World)</a></li>
-        <li><a href="https://savich18.itch.io/" target="_blank">🌐 Our itch.io Profile</a></li>
-      </ul>
     </section>
 
   </div>
 
   <footer>
-    © 2025 Savich18-Company · We create fear grounded in truth.
+    © 2025 Savich18-Company · Fear meets fun.
   </footer>
 
 </body>
